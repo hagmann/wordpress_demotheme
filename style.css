@@ -13,12 +13,10 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-
-
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "open sans";
+    font-family: "open sans", sans-serif;
 }
 
 header {
@@ -67,4 +65,8 @@ footer {
 footer a {
     color: #222;
     text-decoration: none;
+}
+
+article {
+    border: 1px solid #f2f2f2;
 }

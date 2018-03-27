@@ -2,6 +2,8 @@
 // Einbindung WordPress Header für Includes
 get_header(); ?>
 
+<?php the_post_thumbnail(); ?>
+
     <div class="grid-x grid-padding-x">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="cell">

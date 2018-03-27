@@ -52,12 +52,22 @@ add_action( 'widgets_init', 'theme_slug_widgets_init' );
 function theme_slug_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Main Sidebar', 'theme-slug' ),
-        'id' => 'right-sidebar',
-        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
-        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</li>',
-        'before_title'  => '<h2 class="widgettitle">',
-        'after_title'   => '</h2>',
+        'id' => 'right-sidebar'
+    ) );
+	
+	register_sidebar( array(
+        'name' => __( 'Footer 1', 'theme-slug' ),
+        'id' => 'footer-1'
+    ) );
+	
+	register_sidebar( array(
+        'name' => __( 'Footer 2', 'theme-slug' ),
+        'id' => 'footer-2'
+    ) );
+	
+	register_sidebar( array(
+        'name' => __( 'Footer 3', 'theme-slug' ),
+        'id' => 'footer-3'
     ) );
 }
 

@@ -22,6 +22,7 @@ get_header(); ?>
     </div>
     <div class="medium-4 cell hide-for-small-only">
         <?php dynamic_sidebar('right-sidebar'); ?>
+		<?php // get_sidebar(); ?>
     </div>
 </div>
 

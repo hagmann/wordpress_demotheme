@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="title-bar-right">
-                <nav class="show-for-medium">
+                <nav class="show-for-large">
                     <?php wp_nav_menu(array(
                         'container' => false,
                         'menu' => __('Top Bar Menu', 'textdomain'),
@@ -43,7 +43,7 @@
                         'walker' => new F6_TOPBAR_MENU_WALKER(),
                     )); ?>
                 </nav>
-                <button class="menu-icon hide-for-medium" type="button" data-open="offCanvas"></button>
+                <button class="menu-icon hide-for-large" type="button" data-open="offCanvas"></button>
             </div>
         </div>
     </div>

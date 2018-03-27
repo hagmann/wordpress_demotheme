@@ -70,3 +70,7 @@ footer a {
 article {
     border: 1px solid #f2f2f2;
 }
+
+.widget {
+    list-style: none;
+}

@@ -48,6 +48,20 @@ add_action( 'wp_enqueue_scripts', 'register_scripts');
 
 
 
+add_action( 'widgets_init', 'theme_slug_widgets_init' );
+function theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar', 'theme-slug' ),
+        'id' => 'right-sidebar',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+}
+
+
 
 class F6_TOPBAR_MENU_WALKER extends Walker_Nav_Menu
 {
@@ -75,3 +89,5 @@ function f6_topbar_menu_fallback($args)
 
     echo '<ul class="dropdown menu" data-dropdown-menu>'.$fallback.'</ul>';
 }
+
+
